@@ -1,12 +1,33 @@
----
-layout: full
-title: The Engine Room Library
-show_footer: false
-show_navbar: false
-theme: table-of-contents
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta property="og:image" content="/images/logos/engineroom.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://library.theengineroom.org/" />
+    <meta property="og:title" content="" />
 
-<div class="top row container">
+    <link href="/images/icons/favicon.png" rel="shortcut icon" type="image/png" />
+    <link rel="stylesheet" href="/styles/main.css?v=1475066066" />
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script src="/scripts/scrollspy.js"></script>
+    <script src="/scripts/site.js"></script>
+
+    <title>The Engine Room Library</title>
+    
+  </head>
+
+
+
+
+  <body class="row table-of-contents">
+    
+
+    <div class="full">
+  <div class="top row container">
 	<div class="three columns">
 		<a href="//www.theengineroom.org/" target="_blank"><img src="/images/logos/library-dark.png" width="220px"></a>
 	</div>
@@ -23,20 +44,164 @@ theme: table-of-contents
 <hr>
 
 <div class="container" id="books">
-	{% for book in site.books %}
-		{% capture u %}{% cycle 'odd', 'even' %}{% endcapture %}
-		{% if u == 'odd' or forloop.first %}
+	
+		
+		
 	    <div class="row">
-		{% endif %}
+		
 			<div class="two columns">
-				<a href="{{book.url}}"><img src="{{ book.image }}" width="100px"></a>
+				<a href="/agriculture/"><img src="/media/index/agriculture.png" width="100px"></a>
 			</div>
 			<div class="four columns">
-				<h2><a href="{{book.url}}">{{ book.title }}</a></h2>
-				<p>{{ book.description }}</p>
+				<h2><a href="/agriculture/">Responsible Data in Agriculture</a></h2>
+				<p>The agriculture sector is creating increasing amounts of data, from many different sources. The most well resourced actors are able to delve into new technologies and make the most of those insights, whereas others are unable to take such risks or divert their limited resources.</p>
 			</div>
-		{% if u == 'even' or forloop.last %}
+		
+	
+		
+		
+			<div class="two columns">
+				<a href="/humanrights-tech/"><img src="/media/index/ER_HumanRights.png" width="100px"></a>
+			</div>
+			<div class="four columns">
+				<h2><a href="/humanrights-tech/">Technology Tools in Human Rights</a></h2>
+				<p>A scoping study on how human rights defenders are using technology tools to communicate, analyse and manage information, identify new incidents, and archive data. It aims to help understand the realities of tool use and identify human rights defenders' needs as they stand.</p>
+			</div>
+		
 	    </div>
-		{% endif %}
-	{% endfor %}
+		
+	
+		
+		
+	    <div class="row">
+		
+			<div class="two columns">
+				<a href="/microtasking/"><img src="/media/index/microtasking.svg" width="100px"></a>
+			</div>
+			<div class="four columns">
+				<h2><a href="/microtasking/">Microtasking</a></h2>
+				<p>An introduction to microtasking – splitting a large job into small tasks that can be distributed to many people over the Internet – that explains how it works, and where it might be useful for advocacy organisations.</p>
+			</div>
+		
+	
+		
+		
+			<div class="two columns">
+				<a href="/rainforest-tech-audio-video/"><img src="/media/index/audio.svg" width="100px"></a>
+			</div>
+			<div class="four columns">
+				<h2><a href="/rainforest-tech-audio-video/">Audio and Video</a></h2>
+				<p>An introduction to using audio and video in rainforest-related projects to simply present short advocacy messages, collect visual evidence of human rights violations, publish participatory films by community members, or document deforestation over time.<p>Part of the <a href="/rainforest-tech">Rainforest Technology</a> report.</p></p>
+			</div>
+		
+	    </div>
+		
+	
+		
+		
+	    <div class="row">
+		
+			<div class="two columns">
+				<a href="/rainforest-tech-diy-aerial/"><img src="/media/index/drone.svg" width="100px"></a>
+			</div>
+			<div class="four columns">
+				<h2><a href="/rainforest-tech-diy-aerial/">DIY Aerial Photography</a></h2>
+				<p>An introduction to using do-it-yourself aerial photography (such as drones) for making maps or 3D models to monitor wildlife, record land claims and document climate change impacts. This can produce images that are more detailed than satellite data, and that can be updated in real time.<p>Part of the <a href="/rainforest-tech">Rainforest Technology</a> report.</p></p>
+			</div>
+		
+	
+		
+		
+			<div class="two columns">
+				<a href="/rainforest-tech-mobile-phones/"><img src="/media/index/mobile.svg" width="100px"></a>
+			</div>
+			<div class="four columns">
+				<h2><a href="/rainforest-tech-mobile-phones/">Mobile Phone Applications</a></h2>
+				<p>An introduction to using mobile (cell) phone applications to collect and record data in rainforest-related projects for purposes including recording illegal mining or logging; biodiversity surveys; helping communities to map their own land; or validating government maps.<p>Part of the <a href="/rainforest-tech">Rainforest Technology</a> report.</p></p>
+			</div>
+		
+	    </div>
+		
+	
+		
+		
+	    <div class="row">
+		
+			<div class="two columns">
+				<a href="/rainforest-tech-online-maps/"><img src="/media/index/online.svg" width="100px"></a>
+			</div>
+			<div class="four columns">
+				<h2><a href="/rainforest-tech-online-maps/">Online Maps</a></h2>
+				<p>An introduction to using online maps that combine different types of data in rainforest-related projects, for purposes including real-time monitoring (showing the places where most incidents happen), campaigning (such as showing where forest cover is being dramatically reduced) or analysis (gaining new insights by overlaying different types of data on the same map).<p>Part of the <a href="/rainforest-tech">Rainforest Technology</a> report.</p></p>
+			</div>
+		
+	
+		
+		
+			<div class="two columns">
+				<a href="/rainforest-tech-participatory-mapping/"><img src="/media/index/participatory.svg" width="100px"></a>
+			</div>
+			<div class="four columns">
+				<h2><a href="/rainforest-tech-participatory-mapping/">Participatory and GPS Mapping</a></h2>
+				<p>An introduction to producing maps together with communities (participatory mapping), to show how an area is actually being used, compare this with “official” maps, and use the information to claim communities’ rights to land.<p>Part of the <a href="/rainforest-tech">Rainforest Technology</a> report.</p></p>
+			</div>
+		
+	    </div>
+		
+	
+		
+		
+	    <div class="row">
+		
+			<div class="two columns">
+				<a href="/rainforest-tech-satellite-imagery/"><img src="/media/index/satellite.svg" width="100px"></a>
+			</div>
+			<div class="four columns">
+				<h2><a href="/rainforest-tech-satellite-imagery/">Satellite Imagery</a></h2>
+				<p>An introduction to using satellite imagery in rainforest-related projects for analysing change over time in a forest area, or generating evidence of deforestation, trends like increased commercial activity, or visible results of forest degradation.<p>Part of the <a href="/rainforest-tech">Rainforest Technology</a> report.</p></p>
+			</div>
+		
+	
+		
+		
+			<div class="two columns">
+				<a href="/rainforest-tech/"><img src="/media/index/rainforest.svg" width="100px"></a>
+			</div>
+			<div class="four columns">
+				<h2><a href="/rainforest-tech/">Rainforest Technology</a></h2>
+				<p>An introduction (or 'primer') for using technology to monitor and share information on rainforest issues, land rights and indigenous rights. It is designed as a starting point for organisations and activists that are thinking about adding technology to improve their advocacy work.</p>
+			</div>
+		
+	    </div>
+		
+	
 </div>
+
+</div>
+
+
+
+    
+    <!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", "*.library.theengineroom.org"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//www.theengineroom.org/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 6]);
+    var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true;
+g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//www.theengineroom.org/piwik/piwik.php?idsite=6"
+style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+  </body>
+</html>
